@@ -1,0 +1,12 @@
+common模块包括一些常用的工具类函数
+utility_func.hpp
+产生一个随机数组，产生一个随机矩阵
+产生一个随机的字符串，之类的函数，方便构造对数器，写测试用例。
+treeNode.hpp
+用于生成一棵树。
+stop_watch.hpp
+是一个计数器类，方便做性能对比。
+scope_guard.hpp 
+是一个管理资源自动回收的类。方便内存管理。回收一些临时的堆变量。
+anytype_hash_generate.hpp
+是一个hash值构建类，方便对自定义类生成hash值。方便unordered_map，unordered_set使用自定义类型作为key的实例化。
