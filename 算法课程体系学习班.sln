@@ -63,7 +63,7 @@ Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "39、根据数据量猜解�
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "40、子数组达到规定累加和的最大长度系列问题", "src\40、子数组达到规定累加和的最大长度系列问题\40、子数组达到规定累加和的最大长度系列问题.vcxproj", "{4B244AFF-9758-442D-B490-9A23B9311B00}"
 EndProject
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "课程41-48", "课程41-48", "{9813D84F-C6DD-40D1-B1C0-DEA3D81F5B43}"
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "课程41-47", "课程41-47", "{9813D84F-C6DD-40D1-B1C0-DEA3D81F5B43}"
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "41、四边形不等式技巧", "src\41、四边形不等式技巧\41、四边形不等式技巧.vcxproj", "{903BEA36-CDB7-4A55-A045-6CC40EA1D932}"
 EndProject
