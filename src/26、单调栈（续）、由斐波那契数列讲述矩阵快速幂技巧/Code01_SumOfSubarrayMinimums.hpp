@@ -142,7 +142,7 @@ void test_Code01_SumOfSubarrayMinimums() {
 	double elapse_force = 0.0;
 	double elapse_monostack = 0.0;
 	Code01_SumOfSubarrayMinimums::Solution sln;
-	cout << "test begin" << endl;
+	cout << "test_Code01_SumOfSubarrayMinimums begin" << endl;
 	for (int i = 0; i < testTime; i++)
 	{
 		//vector<int> arr = generateRandomArray(maxlen, maxvalue, 1);
@@ -163,12 +163,12 @@ void test_Code01_SumOfSubarrayMinimums() {
 			cout << ans1 << "," << ans2 << endl;
 		}
 	}
-	cout << "test end" << endl;
+
 	/*vector<int> arr{ 3,1,2,4 };*/
 	cout << "average elapse(ms)" << endl;
 	cout << "force:" << elapse_force / testTime << endl;
 	cout << "monostack:" << elapse_monostack / testTime << endl;
-
+	cout << "test_Code01_SumOfSubarrayMinimums end" << endl;
 	//	test begin
 	//	test end
 	//	average elapse(ms)

@@ -6,8 +6,8 @@ using namespace std;
 
 int main() {
 
-	//test_Code01_TrieTree();
-	//test_Code03_CountSort();
+	test_Code01_TrieTree();
+	test_Code03_CountSort();
 	test_Code04_RadixSort();
 	return 0;
 }

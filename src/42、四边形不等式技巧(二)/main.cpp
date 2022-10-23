@@ -4,7 +4,7 @@
 using namespace std;
 int main() {
 
-	//test_Code01_PostOfficeProblem();
+	test_Code01_PostOfficeProblem();
 	test_Code02_ThrowChessPiecesProblem();
 	return 0;
 }

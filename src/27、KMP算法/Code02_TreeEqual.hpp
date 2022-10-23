@@ -268,7 +268,7 @@ void test_Code02_TreeEqual() {
 	int testTimes = 10;
 	//vector<double> array = sln.generateRandomArray(N);
 	//print(array);
-	cout << "test begin" << endl;
+	cout << "test_Code02_TreeEqual begin" << endl;
 	for (int i = 0; i < testTimes; i++)
 	{
 		Node * bigtree = sln.generateRandomBST(bigTreeLevel, nodeMaxValue, 1);
@@ -295,7 +295,7 @@ void test_Code02_TreeEqual() {
 			delete smalltree;
 		}
 	}
-	cout << "test end" << endl;
+	cout << "test_Code02_TreeEqual end" << endl;
 
 
 

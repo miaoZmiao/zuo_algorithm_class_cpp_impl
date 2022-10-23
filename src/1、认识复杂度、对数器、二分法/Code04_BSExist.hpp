@@ -37,4 +37,37 @@ namespace Code04_BSExist {
 
 	}
 
+
+	bool test(vector<int> & sortedArr, int num) {
+		for (int cur : sortedArr) {
+			if (cur == num) {
+				return true;
+			}
+		}
+		return false;
+	}
+}
+
+void test_Code04_BSExist() {
+	
+	cout << "test_Code04_BSExist begin" << endl;
+	int testTime = 5000;
+	int maxSize = 10;
+	int maxValue = 100;
+	bool succeed = true;
+	std::random_device rd;
+	std::mt19937 mt(rd());
+	std::uniform_int_distribution<>  dist(0, maxValue);
+	for (int i = 0; i < testTime; i++) {
+		vector<int> arr = generateRandomArray(maxSize, maxValue);
+		std::sort(arr.begin(), arr.end());
+		int value = dist(mt);
+		if (Code04_BSExist::test(arr, value) != Code04_BSExist::findNumber(arr, value)) {
+			succeed = false;
+			break;
+		}
+	}
+	cout << (succeed ? "Nice!" : "Fucking fucked!") << endl;
+	cout << "test_Code04_BSExist end" << endl;
+
 }

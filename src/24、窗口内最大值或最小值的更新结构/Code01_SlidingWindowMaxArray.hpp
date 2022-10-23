@@ -104,7 +104,7 @@ void test_Code01_SlidingWindowMaxArray()
 	double elapse_force = 0.0;
 	double elapse_slidewindow = 0.0;
 	Code01_SlidingWindowMaxArray::Solution sln;
-	cout << "test begin" << endl;
+	cout << "test_Code01_SlidingWindowMaxArray begin" << endl;
 	int window = 3;
 	for (int i = 0; i < testLoop; i++)
 	{
@@ -130,11 +130,11 @@ void test_Code01_SlidingWindowMaxArray()
 			break;
 		}
 	}
-	cout << "test end" << endl;
+	
 	cout << "average elapse(ms)" << endl;
 	cout << "force:" << elapse_force/ testLoop << endl;
 	cout << "slidewindow:" << elapse_slidewindow /testLoop << endl;
-
+	cout << "test_Code01_SlidingWindowMaxArray end" << endl;
 	/*	test begin
 		test end
 		average elapse(ms)

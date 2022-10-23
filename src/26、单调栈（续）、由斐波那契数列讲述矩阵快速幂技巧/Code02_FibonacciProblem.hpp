@@ -230,6 +230,7 @@ namespace Code02_FibonacciProblem {
 
 void test_Code02_FibonacciProblem() {
 
+	cout << "test_Code02_FibonacciProblem begin" << endl;
 	Code02_FibonacciProblem::Solution sln;
 	int n = 8;
 	cout << "f1:" << sln.f1(n) << endl;
@@ -244,7 +245,7 @@ void test_Code02_FibonacciProblem() {
 	cout << "c1:" << sln.c1(n) << endl;
 	cout << "c2:" << sln.c2(n) << endl;
 	cout << "c3:" << sln.c3(n) << endl;
-
+	cout << "test_Code02_FibonacciProblem end" << endl;
 }
 
 #endif

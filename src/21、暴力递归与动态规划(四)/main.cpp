@@ -9,10 +9,10 @@ int main()
 {
 
 	test_Code01_MinPathSum();
-	//test_Code02_CoinsWayEveryPaperDifferent();
-	//test_Code03_CoinsWayNoLimit();
-	// test_Code04_CoinsWaySameValueSamePapper();
-	//test_Code05_BobDie();
+	test_Code02_CoinsWayEveryPaperDifferent();
+	test_Code03_CoinsWayNoLimit();
+	 test_Code04_CoinsWaySameValueSamePapper();
+	test_Code05_BobDie();
 	char c;
 	cin >> c;
 	return 0;

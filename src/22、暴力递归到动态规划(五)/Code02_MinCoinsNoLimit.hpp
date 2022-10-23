@@ -100,6 +100,7 @@ namespace Code02_MinCoinsNoLimit {
 
 void test_Code02_MinCoinsNoLimit() {
 
+	cout << "test_Code02_MinCoinsNoLimit begin" << endl;
 	int maxLen = 30;
 	int maxValue = 30;
 	int testTime = 10;
@@ -144,6 +145,7 @@ void test_Code02_MinCoinsNoLimit() {
 	cout << "force:" << elapse_force / testTime << "ms" << endl;
 	cout << "dp:" << elapse_dp / testTime << "ms" << endl;
 	cout << "dpEnumOptimization:" << elapse_dp_EO / testTime << "ms" << endl;
+	cout << "test_Code02_MinCoinsNoLimit end" << endl;
 	//	test begin
 	//	test end
 	//	average elapse(ms)

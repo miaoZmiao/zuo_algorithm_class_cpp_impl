@@ -114,6 +114,7 @@ namespace Code02_HorseJump {
 
 void test_Code02_HorseJump() {
 	
+	cout << "test_Code02_HorseJump begin" << endl;
 	int x = 7;
 	int y = 7;
 	int step = 10;
@@ -130,7 +131,7 @@ void test_Code02_HorseJump() {
 	cout << "ret2:" << ret2 << endl;
 	cout << "dp : " << st.elapsed_ms() << "ms" << endl;
 
-
+	cout << "test_Code02_HorseJump end" << endl;
 	//  amazing result on my computer
 	//	ret1:515813
 	//	force : 124.714ms

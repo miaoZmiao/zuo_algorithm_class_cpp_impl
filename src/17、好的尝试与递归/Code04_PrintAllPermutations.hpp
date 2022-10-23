@@ -85,6 +85,7 @@ namespace PrintAllPermutations {
 
 void test_permutation()
 {
+	cout << "test_permutation begin" << endl;
 	string input = "aac";
 
 	vector<string> ans = PrintAllPermutations::permutation1(input);
@@ -100,6 +101,7 @@ void test_permutation()
 		cout << it << endl;
 	}
 	cout << "=======================" << endl;
+	cout << "test_permutation end" << endl;
 }
 
 

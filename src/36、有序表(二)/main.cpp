@@ -5,7 +5,7 @@ using namespace std;
 
 int main() {
 
-	//test_Code01_SizeBalancedTreeMap();
+	test_Code01_SizeBalancedTreeMap();
 	test_Code02_SkipListMap();
 	return 0;
 }

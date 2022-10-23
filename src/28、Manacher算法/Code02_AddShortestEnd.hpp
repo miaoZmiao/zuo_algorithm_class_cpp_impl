@@ -70,11 +70,12 @@ namespace Code02_AddShortestEnd {
 }
 
 void test_Code02_AddShortestEnd() {
-
+	cout << "test_Code02_AddShortestEnd begin" << endl;
 	string s = "aabbccddcc";
 	Code02_AddShortestEnd::Solution sln;
 	string ans = sln.shortestEnd(s);
 	cout << ans << endl;
+	cout << "test_Code02_AddShortestEnd end" << endl;
 }
 
 #endif

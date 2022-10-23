@@ -97,6 +97,7 @@ namespace Code03_CoinsWayNoLimit
 
 void test_Code03_CoinsWayNoLimit()
 {
+	cout << "test_Code03_CoinsWayNoLimit begin" << endl;
 	int maxvalue = 10;
 	int minvalue = 1;
 	int test_loop = 10;
@@ -136,7 +137,7 @@ void test_Code03_CoinsWayNoLimit()
 	cout << "force:" << elapse_force / test_loop << endl;
 	cout << "dp:" << elapse_dp / test_loop << endl;
 	cout << "dpEnumOptimization:" << elapse_dp_enum/ test_loop << endl;
-
+	cout << "test_Code03_CoinsWayNoLimit end" << endl;
 	/*	²âÊÔ¿ªÊ¼
 		²âÊÔ½áÊø
 		average elapse(ms)

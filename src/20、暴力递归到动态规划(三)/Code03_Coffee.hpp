@@ -244,6 +244,9 @@ namespace Code03_Coffee {
 }
 
 void test_Code03_Coffee() {
+
+	cout << "test_Code03_Coffee begin" << endl;
+	cout << "test_Code03_Coffee end" << endl;
 	int len = 10;
 	int max = 10;
 	int testTime = 10;

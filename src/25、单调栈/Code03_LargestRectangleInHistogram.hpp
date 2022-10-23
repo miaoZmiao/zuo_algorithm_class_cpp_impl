@@ -61,8 +61,11 @@ namespace Code03_LargestRectangleInHistogram {
 void test_Code03_LargestRectangleInHistogram() {
 
 	//
+	cout << "test_Code03_LargestRectangleInHistogram begin" << endl;
+
 	Code03_LargestRectangleInHistogram::Solution sln;
-	
+	cout << "test_Code03_LargestRectangleInHistogram end" << endl;
+
 }
 
 #endif

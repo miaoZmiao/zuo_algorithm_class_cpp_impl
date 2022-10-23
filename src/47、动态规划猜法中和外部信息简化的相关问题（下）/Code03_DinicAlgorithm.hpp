@@ -124,6 +124,7 @@ namespace Code03_DinicAlgorithm {
 using Dinic = Code03_DinicAlgorithm::Dinic;
 void test_Code03_DinicAlgorithm() {
 	
+	cout << "test_Code03_DinicAlgorithm begin" << endl;
 	int testCases = 0;
 	cin >> testCases;
 	int n = 0;
@@ -150,7 +151,7 @@ void test_Code03_DinicAlgorithm() {
 		int ans = dinic.maxFlow(s, t);
 		cout << "Case " << i << ": " << ans << endl;
 	}
-
+	cout << "test_Code03_DinicAlgorithm end" << endl;
 
 }
 

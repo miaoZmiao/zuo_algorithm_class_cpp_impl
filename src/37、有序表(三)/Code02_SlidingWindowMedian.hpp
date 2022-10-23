@@ -427,10 +427,12 @@ namespace Code02_SlidingWindowMedian {
 
 void test_Code02_SlidingWindowMedian() {
 
+	cout << "test_Code02_SlidingWindowMedian begin" << endl;
 	vector<int> nums{2,3,3,3,4,4,6,4,5,5,5};
 	int k = 4;
 	vector<double> ans = Code02_SlidingWindowMedian::medianSlidingWindow(nums, k);
 	print(ans);
+	cout << "test_Code02_SlidingWindowMedian end" << endl;
 }
 
 #endif

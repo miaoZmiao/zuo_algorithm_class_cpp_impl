@@ -6,6 +6,8 @@
 #include <map>
 #include <vector>
 #include <chrono>
+#include "utility_func.hpp"
+#include "stop_watch.hpp"
 //题目2：水果套餐问题
 //有一个人小明要买水果，正好商家推出了水果套餐。小明要尽量花少的钱，凑足自己要的水果。
 //参数从控制台流输入：
@@ -31,104 +33,6 @@
 //	2、水果种类不超过10，套餐种类不超过10（记不清了，反正套餐种类和水果种类都不大）
 //	3、水果价格不超过1000 （这个我也记不清了，描述信息反正没有大于1000的数字）
 //	4、都是正数
-
-
-using namespace  std;
-
-//  计时器
-class stop_watch
-{
-public:
-	stop_watch() {}
-
-	void start()
-	{
-		if (!running)
-		{
-			begin_time_ = std::chrono::steady_clock::now();
-			running = true;
-		}
-	}
-
-	void stop()
-	{
-		if (running)
-		{
-			end_time_ = std::chrono::steady_clock::now();
-			elapsed_ = end_time_ - begin_time_;
-			running = false;
-		}
-	}
-
-	void restart()
-	{
-		elapsed_ = std::chrono::steady_clock::duration::zero();
-		begin_time_ = std::chrono::steady_clock::now();
-		running = true;
-	}
-
-	//秒
-	double elapsed_second()
-	{
-		return ((double)std::chrono::duration_cast<std::chrono::milliseconds>(elapsed_).count() / 1e3);
-	}
-	//毫秒
-	double elapsed_ms()
-	{
-		return ((double)std::chrono::duration_cast<std::chrono::microseconds>(elapsed_).count() / 1e3);
-	}
-
-protected:
-	std::chrono::steady_clock::duration elapsed_ = std::chrono::steady_clock::duration::zero();
-	std::chrono::steady_clock::time_point begin_time_;
-	std::chrono::steady_clock::time_point end_time_;
-	bool running = false;
-};
-
-
-
-// 产生一个随机数组
-vector<int> generateRandomArray(int maxsize, int maxvalue, int minvalue = 0) {
-	std::random_device rd;  //Will be used to obtain a seed for the random number engine
-	std::mt19937 gen(rd()); //Standard mersenne_twister_engine seeded with rd()
-	std::uniform_int_distribution<> distrib(minvalue, maxvalue);
-
-	vector<int> result;
-	for (int i = 0; i < maxsize; i++)
-	{
-		result.push_back(distrib(gen));
-	}
-	return result;
-}
-// 打印数组
-template <class T >
-void print(vector<T>& arr)
-{
-	//cout << "print array" << endl;
-	cout << "[";
-	for (size_t i = 0; i < arr.size(); i++)
-	{
-		if (i == arr.size() - 1)
-		{
-			cout << arr[i] << "]" << endl;
-		}
-		else
-		{
-			cout << arr[i] << ",";
-		}
-	}
-	//cout << "print array end" << endl;
-}
-
-// 打印矩阵
-template <class T >
-void printMatrix(vector<vector<T>>& matrix)
-{
-	for (auto& vec : matrix)
-	{
-		print<T>(vec);
-	}
-}
 
 
 namespace FRUITS_TAOCAN
@@ -415,7 +319,7 @@ void test_FRUITS_TAOCAN() {
 	std::mt19937 mt(rd());
 	std::uniform_real_distribution<> dist(0.0, 1.0);
 	FRUITS_TAOCAN::duishuqi dui;
-	cout << "test begin" << endl;
+	cout << "test_FRUITS_TAOCAN begin" << endl;
 	stop_watch st;
 	double force1_elapse = 0.0;
 	double force2_elapse = 0.0;
@@ -459,7 +363,7 @@ void test_FRUITS_TAOCAN() {
 			break;
 		}
 	}
-	cout << "test end" << endl;
+	cout << "test_FRUITS_TAOCAN end" << endl;
 	cout << "average elapse(ms)" << endl;
 	cout << "duishuqi:\t" << force1_elapse / testTime << endl;
 	cout << "force1:\t\t" << force2_elapse / testTime << endl;

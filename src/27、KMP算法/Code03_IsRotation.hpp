@@ -98,6 +98,7 @@ namespace Code03_IsRotation {
 }
 
 void test_Code03_IsRotation() {
+	cout << "test_Code03_IsRotation begin" << endl;
 	Code03_IsRotation::Solution sln;
 
 	string s1 = "amfaingasidniagfnasd";
@@ -107,7 +108,7 @@ void test_Code03_IsRotation() {
 	cout << "ans1:" << ans1 << endl;
 	bool ans2 = sln.isRotation(s2, s3);
 	cout << "ans2:" << ans2 << endl;
-	
+	cout << "test_Code03_IsRotation end" << endl;
 }
 
 #endif

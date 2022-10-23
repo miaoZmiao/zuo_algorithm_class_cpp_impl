@@ -90,12 +90,13 @@ namespace Code02_SnacksWays {
 
 void test_Code02_SnacksWays() {
 
+	cout << "test_Code02_SnacksWays begin" << endl;
 	vector<int> arr = { 4, 3, 2, 9 };
 	int w = 8;
 	cout << Code02_SnacksWays::ways1(arr, w) << endl;
 	cout << Code02_SnacksWays::dp1(arr, w) << endl;
 	cout << Code02_SnacksWays::dp2(arr, w) << endl;
-
+	cout << "test_Code02_SnacksWays end" << endl;
 }
 
 #endif

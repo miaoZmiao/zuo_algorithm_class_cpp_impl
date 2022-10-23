@@ -202,6 +202,7 @@ namespace Code04_MinCoinsOnePaper {
 
 void test_Code04_MinCoinsOnePaper()
 {
+	cout << "test_Code04_MinCoinsOnePaper begin" << endl;
 	int maxLen = 5;
 	int maxValue = 10;
 	int testTime = 10;
@@ -262,7 +263,7 @@ void test_Code04_MinCoinsOnePaper()
 	cout << "当货币很少出现重复，dp2比dp3有常数时间优势" << endl;
 	cout << "当货币大量出现重复，dp3时间复杂度明显优于dp2" << endl;
 	cout << "dp3的优化用到了窗口内最小值的更新结构" << endl;
-
+	cout << "test_Code04_MinCoinsOnePaper end" << endl;
 	/*	功能测试开始
 		功能测试结束
 		==========

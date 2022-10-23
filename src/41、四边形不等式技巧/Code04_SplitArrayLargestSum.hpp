@@ -318,13 +318,14 @@ void test_Code04_SplitArrayLargestSum() {
 		}
 	}
 
-	cout << "test_Code04_SplitArrayLargestSum end" << endl;
+
 	cout << "average elapse(ms)" << endl;
 	cout << "force1:\t\t" << elapse1 / testTime << endl;
 	cout << "force2:\t\t" << elapse2 / testTime << endl;
 	cout << "dp1:\t\t" << elapse3 / testTime << endl;
 	cout << "dp2:\t\t" << elapse4 / testTime << endl;
 	cout << "split5:\t\t" << elapse5 / testTime << endl;
+	cout << "test_Code04_SplitArrayLargestSum end" << endl;
 	/*
 		test_Code04_SplitArrayLargestSum begin
 		test_Code04_SplitArrayLargestSum begin

@@ -4,8 +4,8 @@
 #include "Code03_LongestCommonSubstringConquerByHeight.hpp"
 int main() {
 
-	//test_Code01_InsertS2MakeMostAlphabeticalOrder();
-	//test_Code02_CreateMaximumNumber();
+	test_Code01_InsertS2MakeMostAlphabeticalOrder();
+	test_Code02_CreateMaximumNumber();
 	test_Code03_LongestCommonSubstringConquerByHeight();
 	char c;
 	cin >> c;

@@ -6,8 +6,8 @@ using namespace std;
 
 int main()
 {
-	//test_Code01_PalindromeSubsequence();
-	//test_Code02_HorseJump();
+	test_Code01_PalindromeSubsequence();
+	test_Code02_HorseJump();
 	test_Code03_Coffee();
 
 	char c;

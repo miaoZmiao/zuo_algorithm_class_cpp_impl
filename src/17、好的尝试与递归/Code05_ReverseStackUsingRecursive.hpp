@@ -63,6 +63,7 @@ void printStack(std::stack<int> & stack)
 
 void test_Code05_ReverseStackUsingRecursive()
 {
+	cout << "test_Code05_ReverseStackUsingRecursive begin" << endl;
 	int indexbegin = 1;
 	int indexend = 5;
 	std::stack<int> st;
@@ -77,7 +78,7 @@ void test_Code05_ReverseStackUsingRecursive()
 	cout << " reverse stack " << endl;
 	Code05_ReverseStackUsingRecursive::reverse(st);
 	printStack(st);
-	
+	cout << "test_Code05_ReverseStackUsingRecursive end" << endl;
 
 }
 

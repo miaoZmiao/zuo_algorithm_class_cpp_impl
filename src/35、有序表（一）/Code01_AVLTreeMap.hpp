@@ -425,7 +425,7 @@ namespace Code01_AVLTreeMap {
 
 
 void test_Code01_AVLTreeMap() {
-	
+	cout << "test_Code01_AVLTreeMap begin" << endl;
 	using AVLTree = Code01_AVLTreeMap::AVLTree;
 	AVLTree tree;
 
@@ -462,6 +462,8 @@ void test_Code01_AVLTreeMap() {
 	tree.print();
 	tree.remove(6);
 	tree.print();
+	cout << "test_Code01_AVLTreeMap end" << endl;
+
 }
 
 

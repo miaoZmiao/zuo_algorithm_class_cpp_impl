@@ -79,6 +79,7 @@ namespace Code04_LongestCommonSubsequence
 
 void test_Code04_LongestCommonSubsequence()
 {
+	cout << "test_Code04_LongestCommonSubsequence begin" << endl;
 	Code04_LongestCommonSubsequence::Solution sln;
 	string text1 = "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa";
 	string text2 =
@@ -88,7 +89,7 @@ void test_Code04_LongestCommonSubsequence()
 	int ret = sln.longestCommonSubsequence(text1, text2);
 
 	cout << "longestCommonSubsequence:" << ret << endl;
-
+	cout << "test_Code04_LongestCommonSubsequence end" << endl;
 }
 
 #endif

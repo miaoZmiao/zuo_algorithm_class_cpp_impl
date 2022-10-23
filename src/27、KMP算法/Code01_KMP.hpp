@@ -159,6 +159,7 @@ namespace Code01_KMP {
 
 void test_Code01_KMP(){
 
+	cout << "test_Code01_KMP begin" << endl;
 	Code01_KMP::Solution sln;
 	int maxlen = 10;
 	int maxmatchlen = 2;
@@ -176,6 +177,8 @@ void test_Code01_KMP(){
 			cout << "pos:" << pos << endl;
 		}
 	}
+	cout << "test_Code01_KMP end" << endl;
+
 }
 
 #endif

@@ -152,7 +152,7 @@ namespace Code03_ZeroLeftOneStringNumber {
 
 void test_Code03_ZeroLeftOneStringNumber() {
 
-
+	cout << "test_Code03_ZeroLeftOneStringNumber begin" << endl;
 	Code03_ZeroLeftOneStringNumber::Solution sln;
 	int n = 1;
 	int nmax = 10;
@@ -167,7 +167,7 @@ void test_Code03_ZeroLeftOneStringNumber() {
 			<<","<<ans4<< endl;
 		n++;
 	}
-	
+	cout << "test_Code03_ZeroLeftOneStringNumber end" << endl;
 	
 }
 

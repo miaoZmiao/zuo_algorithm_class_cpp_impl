@@ -155,12 +155,13 @@ namespace Code02_FallingSquares {
 }
 
 void test_Code02_FallingSquares() {
+	cout << "test_Code02_FallingSquares begin" << endl;
 	vector<vector<int>> positions{ {6,4 },{2,7 },{6,9} };
 	Code02_FallingSquares::Solution sln;
 	vector<int> ans = sln.fallingSquares(positions);
 
 	print(ans);
-
+	cout << "test_Code02_FallingSquares end" << endl;
 };
 	
 

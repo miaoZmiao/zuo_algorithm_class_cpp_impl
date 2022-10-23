@@ -39,22 +39,24 @@ void test_subs()
 void test_subsNoRepeat()
 {
 	string input = "abbc";
+	cout << "test_subsNoRepeat begin" << endl;
 	vector<string> ret = PrintAllSubsquences::subsNoRepeat(input);
 	for (auto & it : ret)
 	{
 		cout << it << endl;
 	}
+	cout << "test_subsNoRepeat end" << endl;
 }
 
 
 int main()
 {
 	
-	/*test_hanoi1();
+	test_hanoi1();
 	test_hanoi2();
-	test_hanoi3();*/
-	//test_subsNoRepeat();
-	//test_permutation();
+	test_hanoi3();
+	test_subsNoRepeat();
+	test_permutation();
 	test_Code05_ReverseStackUsingRecursive();
 	char c;
 	cin >> c;

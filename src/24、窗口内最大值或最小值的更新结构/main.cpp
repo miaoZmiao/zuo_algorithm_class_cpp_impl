@@ -7,9 +7,9 @@ using namespace std;
 
 int main()
 {
-	//test_Code01_SlidingWindowMaxArray();
-	//test_Code02_AllLessNumSubArray();
-	//test_Code03_GasStation();
+	test_Code01_SlidingWindowMaxArray();
+	test_Code02_AllLessNumSubArray();
+	test_Code03_GasStation();
 	test_Code04_MinCoinsOnePaper();
 	char c;
 	cin >> c;

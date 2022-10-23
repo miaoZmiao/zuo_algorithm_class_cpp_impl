@@ -4,8 +4,8 @@
 #include "Code03_AddRemoveGetIndexGreat.hpp"
 int main() {
 
-	//test_Code01_CountofRangeSum();
-	//test_Code02_SlidingWindowMedian();
+	test_Code01_CountofRangeSum();
+	test_Code02_SlidingWindowMedian();
 	test_Code03_AddRemoveGetIndexGreat();
 	return 0;
 }

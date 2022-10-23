@@ -61,3 +61,12 @@ namespace Code06_BSAwesome {
 	}
 	
 }
+
+
+void test_Code06_BSAwesome() {
+	
+	cout << "test_Code06_BSAwesome begin" << endl;
+
+	cout << "test_Code06_BSAwesome end" << endl;
+
+}

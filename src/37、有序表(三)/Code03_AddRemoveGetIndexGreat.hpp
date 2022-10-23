@@ -303,7 +303,7 @@ namespace Code03_AddRemoveGetIndexGreat {
 }
 
 void test_Code03_AddRemoveGetIndexGreat() {
-	
+	cout << "test_Code03_AddRemoveGetIndexGreat begin" << endl;
 	int test = 100;
 	int max = 20;
 	bool pass = true;
@@ -314,7 +314,6 @@ void test_Code03_AddRemoveGetIndexGreat() {
 
 	vector<int> arr;
 	Code03_AddRemoveGetIndexGreat::SbtList sbt;
-	cout << "test_Code03_AddRemoveGetIndexGreat begin" << endl;
 	for (int i = 0; i < test; i++)
 	{
 		if (arr.size() != sbt.total_size())

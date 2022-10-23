@@ -208,7 +208,7 @@ void test_Code02_IndexTree2D() {
 	int N = 5;
 	// col
 	int M = 5;
-	int testTime = 10;
+	int testTime = 1000;
 	Code02_IndexTree2D::Solution sln;
 	Code02_IndexTree2D::Right duishuqi;
 	std::random_device rd;

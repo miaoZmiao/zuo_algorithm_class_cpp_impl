@@ -314,7 +314,7 @@ namespace Code03_LongestCommonSubstringConquerByHeight {
 void test_Code03_LongestCommonSubstringConquerByHeight() {
 	int len = 30;
 	int range = 5;
-	int testTime = 100000;	
+	int testTime = 1000;	
 	std::random_device rd;
 	std::mt19937 mt(rd());
 	std::uniform_int_distribution<> dist(1, len);

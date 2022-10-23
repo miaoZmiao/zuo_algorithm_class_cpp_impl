@@ -85,7 +85,10 @@ namespace Code04_MaximalRectangle
 }
 
 void test_Code04_MaximalRectangle() {
+	cout << "test_Code04_MaximalRectangle begin" << endl;
+
 	Code04_MaximalRectangle::Solution sln;
+	cout << "test_Code04_MaximalRectangle end" << endl;
 }
 
 

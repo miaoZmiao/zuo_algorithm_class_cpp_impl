@@ -111,7 +111,7 @@ namespace Code05_CountSubmatricesWithAllOnes {
 
 void test_Code05_CountSubmatricesWithAllOnes()
 {
-
+	cout << "test_Code05_CountSubmatricesWithAllOnes begin" << endl;
 	/*[[1, 0, 1], [1, 1, 0], [1, 1, 0]]*/
 	/*[[0, 1, 1, 0], [0, 1, 1, 1], [1, 1, 1, 0]]*/
 	vector<vector<int>> mat= { {0, 1, 1, 0},
@@ -121,7 +121,7 @@ void test_Code05_CountSubmatricesWithAllOnes()
 	int ans = sln.numSubmat(mat);
 	
 	cout << ans << endl;
-	
+	cout << "test_Code05_CountSubmatricesWithAllOnes end" << endl;
 }
 
 

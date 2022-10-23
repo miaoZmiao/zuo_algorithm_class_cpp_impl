@@ -5,8 +5,9 @@ using namespace std;
 int main() {
 
 
-	//test_DC3();
+
 	test_Code01_LastSubstringInLexicographicalOrder();
+	test_DC3();
 	char c;
 	cin >> c;
 

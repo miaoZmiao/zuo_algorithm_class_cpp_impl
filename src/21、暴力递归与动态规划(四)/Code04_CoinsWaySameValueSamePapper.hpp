@@ -177,6 +177,8 @@ namespace Code04_CoinsWaySameValueSamePapper {
 
 void test_Code04_CoinsWaySameValueSamePapper() {
 
+
+	cout << "test_Code04_CoinsWaySameValueSamePapper begin" << endl;
 	int maxvalue = 10;
 	int minvalue = 1;
 	int test_loop = 10;
@@ -216,7 +218,7 @@ void test_Code04_CoinsWaySameValueSamePapper() {
 	cout << "dp:" << elapse_dp / test_loop << endl;
 	cout << "dpEnumOptimization:" << elapse_dp_enum / test_loop << endl;
 
-
+	cout << "test_Code04_CoinsWaySameValueSamePapper end" << endl;
 	//	²âÊÔ¿ªÊ¼
 	//	²âÊÔ½áÊø
 	//	average elapse(ms)

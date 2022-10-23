@@ -68,7 +68,7 @@ void test_Code01_IndexTree() {
 	Code01_IndexTree::Right duishuqi;
 	int N = 100;
 	int V = 100;
-	int testTime = 2000000;
+	int testTime = 2000;
 	sln.reset(N);
 	duishuqi.reset(N);
 	std::random_device  rd;

@@ -7,9 +7,9 @@
 using namespace std;
 
 int main() {
-	//test_Code01_BestSplitForAll();
-	//test_Code02_BestSplitForEveryPosition();
-	//test_Code03_StoneMerge();
+	test_Code01_BestSplitForAll();
+	test_Code02_BestSplitForEveryPosition();
+	test_Code03_StoneMerge();
 	test_Code04_SplitArrayLargestSum();
 	return 0;
 }

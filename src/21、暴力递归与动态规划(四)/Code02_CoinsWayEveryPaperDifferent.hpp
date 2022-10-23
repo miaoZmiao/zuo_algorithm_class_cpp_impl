@@ -79,6 +79,7 @@ namespace Code02_CoinsWayEveryPaperDifferent {
 
 void test_Code02_CoinsWayEveryPaperDifferent()
 {
+	cout << "test_Code02_CoinsWayEveryPaperDifferent begin" << endl;
 	int maxvalue = 10;
 	int minvalue = 1;
 	int test_loop = 10;
@@ -111,7 +112,7 @@ void test_Code02_CoinsWayEveryPaperDifferent()
 	cout<<"average elapse(ms)"<<endl;
 	cout << "force:" << elapse_force / test_loop << endl;
 	cout << "dp:" << elapse_dp / test_loop << endl;
-
+	cout << "test_Code02_CoinsWayEveryPaperDifferent end" << endl;
 	//	²âÊÔ¿ªÊ¼
 	//	²âÊÔ½áÊø
 	//	average elapse(ms)

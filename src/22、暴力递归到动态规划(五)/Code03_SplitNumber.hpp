@@ -100,6 +100,7 @@ namespace Code03_SplitNumber {
 
 void test_Code03_SplitNumber() {
 
+	cout << "test_Code03_SplitNumber begin" << endl;
 	Code03_SplitNumber::Solution sln;
 
 	int testTime = 1;
@@ -138,7 +139,7 @@ void test_Code03_SplitNumber() {
 	cout << "force:" << elapse_force / testTime << "ms" << endl;
 	cout << "dp:" << elapse_dp / testTime << "ms" << endl;
 	cout << "dpEnumOptimization:" << elapse_dp_EO / testTime << "ms" << endl;
-
+	cout << "test_Code03_SplitNumber end" << endl;
 	//	¿ªÊ¼²âÊÔ
 	//	²âÊÔ½áÊø
 	//	average elapse(ms)

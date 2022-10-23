@@ -66,11 +66,13 @@ namespace Code01_Manacher {
 
 void test_Code01_Manacher() {
 
+	cout << "test_Code01_Manacher begin" << endl;
 	std::string pali = "abcdcba";
 	Code01_Manacher::Solution sln;
 	int ans = sln.manacher(pali);
 	cout << pali << endl;
 	cout << ans << endl;
+	cout << "test_Code01_Manacher end" << endl;
 }
 
 

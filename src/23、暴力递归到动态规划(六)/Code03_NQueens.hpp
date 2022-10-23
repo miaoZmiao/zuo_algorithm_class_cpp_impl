@@ -86,6 +86,7 @@ namespace Code03_NQueens {
 
 void test_Code03_NQueens() {
 
+	cout << "test_Code03_NQueens begin" << endl;
 	int n = 10;
 	Code03_NQueens::Solution sln;
 	cout << "test begin" << endl;
@@ -105,7 +106,7 @@ void test_Code03_NQueens() {
 	cout << "average elapse(ms)" << endl;
 	cout << "force1:" << elapse_force1 << endl;
 	cout << "force2:" << elapse_force2 << endl;
-
+	cout << "test_Code03_NQueens end" << endl;
 	//	test begin
 	//	n : 15
 	//	ans1 : 2279184

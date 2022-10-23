@@ -74,8 +74,6 @@ void test_pair_conflict(int N)
 			}
 		}
 	}
-	char c;
-	cin >> c;
 }
 void test_Code04_Kruskal() {
 	Graph g = generate_Graph(4, 1, 5, 1, 10);
@@ -94,20 +92,25 @@ void test_Code05_Prim()
 
 void test_Code06_Dijkstra()
 {
+
+	cout << "test_Code06_Dijkstra begin" << endl;
 	Graph g = generate_Graph(4, 1, 5, 1, 10);
 	Code06_Dijkstra sln;
 
 	unordered_map<Node *, int> ans1 = sln.dijkstra1(g.nodes.begin()->second, g);
 
 	unordered_map<Node *, int> ans2 = sln.dijkstra2(g.nodes.begin()->second, g, g.nodes.size());
-
-
+	auto printDijkstra = [](unordered_map<Node *, int> & ans1) {
+		
+	};
+	cout << "test_Code06_Dijkstra end" << endl;
 }
 
 
 int main()
 {
 	//test_pair_conflict(4);
+	test_Code06_Dijkstra();
 	char c;
 	cin >> c;
 	return 0;

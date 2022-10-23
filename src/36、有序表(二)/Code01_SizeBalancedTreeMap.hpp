@@ -504,7 +504,7 @@ namespace Code01_SizeBalancedTreeMap {
 void test_Code01_SizeBalancedTreeMap(){
 	using SizeBalancedTree = Code01_SizeBalancedTreeMap::SizeBalancedTree;
 	SizeBalancedTree sbt;
-	
+	cout << "test_Code01_SizeBalancedTreeMap begin" << endl;
 	sbt.put(1, 1);
 	sbt.print();
 	sbt.put(2, 2);
@@ -537,6 +537,7 @@ void test_Code01_SizeBalancedTreeMap(){
 	for (int i = 0; i < sbt.size(); i++) {
 		cout << sbt.getIndexKey(i) << "," << sbt.getIndexValue(i) << endl;;
 	}
+	cout << "test_Code01_SizeBalancedTreeMap end" << endl;
 }
 
 #endif 

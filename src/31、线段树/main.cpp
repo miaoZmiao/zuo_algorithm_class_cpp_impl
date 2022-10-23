@@ -6,8 +6,8 @@
 using namespace std;
 int main()
 {
+	test_Code01_SegmentTree();
 	test_Code02_FallingSquares();
-	//test_Code01_SegmentTree();
 	char c;
 	cin >> c;
 	return 0;

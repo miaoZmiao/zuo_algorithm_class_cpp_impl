@@ -129,6 +129,7 @@ namespace Code01_MinPathSum {
 
 void test_Code01_MinPathSum()
 {
+	cout << "test_Code01_MinPathSum begin" << endl;
 	int M = 10;
 	int N = 10;
 	int maxvalue = 10;
@@ -161,7 +162,7 @@ void test_Code01_MinPathSum()
 	cout << "average elapse (ms)" << endl;
 	cout << "force:" << elapse_force/ test_loop << endl;
 	cout << "dp:" << elapse_dp / test_loop << endl;
-
+	cout << "test_Code01_MinPathSum end" << endl;
 
 	//	²âÊÔ¿ªÊ¼
 	//	²âÊÔ½áÊø

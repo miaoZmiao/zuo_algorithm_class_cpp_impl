@@ -104,7 +104,7 @@ void test_Code02_AllTimesMinToMax() {
 
 	Code02_AllTimesMinToMax::Solution sln;
 	int testTimes = 20;
-	cout << "test begin" << endl;
+	cout << "test_Code02_AllTimesMinToMax begin" << endl;
 	int maxlen = 10000;
 	int maxValue = 10000;
 	stop_watch sw;
@@ -127,10 +127,11 @@ void test_Code02_AllTimesMinToMax() {
 			break;
 		}
 	}
-	cout <<"test finish" << endl;
+	cout <<"test_Code02_AllTimesMinToMax end" << endl;
 	cout << "average elapse(ms)" << endl;
 	cout << "force:" << elapse_force / testTimes << endl;
 	cout << "monostack:" << elapse_monostack / testTimes << endl;
+	cout << "test_Code02_AllTimesMinToMax end" << endl;
 	/*	test begin
 		test finish
 		average elapse(ms)

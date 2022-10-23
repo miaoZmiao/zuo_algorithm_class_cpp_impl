@@ -6,8 +6,8 @@ using namespace  std;
 
 int main() {
 
-	//test_Code01_CanIWin();
-	//test_Code02_TSP();
+	test_Code01_CanIWin();
+	test_Code02_TSP();
 	test_Code03_PavingTile();
 	char c;
 	cin >> c;

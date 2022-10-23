@@ -202,7 +202,7 @@ void test_Code01_MonotonousStack()
 	double elapse_force = 0.0;
 	double elapse_monostack = 0.0;
 	Code01_MonotonousStack::Solution sln;
-	cout << "test begin" << endl;
+	cout << "test_Code01_MonotonousStack begin" << endl;
 	for (int i = 0; i < testLoop; i++)
 	{
 		vector<int > arr = generateRandomArray(maxlen, maxval, 1);
@@ -227,11 +227,11 @@ void test_Code01_MonotonousStack()
 			break;
 		}
 	}
-	cout << "test end" << endl;
+
 	cout << "average elapse(ms)" << endl;
 	cout << "force:" << elapse_force / testLoop << endl;
 	cout << "monostack:" << elapse_monostack / testLoop << endl;
-
+	cout << "test_Code01_MonotonousStack end" << endl;
 	//printOutput(arr1, ans1);
 	//	test begin
 	//	test end

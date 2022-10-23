@@ -54,12 +54,12 @@ namespace Code02_EatGrass {
 
 
 void test_Code02_EatGrass() {
-	
+	cout << "test_Code02_EatGrass begin" << endl;
 	for (int i = 1; i < 50; i++)
 	{
 		cout << i << ",	" << Code02_EatGrass::whoWin(i)<<",	"<< Code02_EatGrass::smartWhoWin(i)<< endl;
 	}
-
+	cout << "test_Code02_EatGrass end" << endl;
 }
 
 #endif

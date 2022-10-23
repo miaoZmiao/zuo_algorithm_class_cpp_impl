@@ -42,11 +42,12 @@ namespace Code03_MSumToN {
 
 
 void test_Code03_MSumToN() {
-
+	cout << "test_Code03_MSumToN begin" << endl;
 	for (int i = 1; i < 200; i++)
 	{
 		cout << i << "," << Code03_MSumToN::isMSum1(i)<<","<< Code03_MSumToN::smartisMSum(i) << endl;
 	}
+	cout << "test_Code03_MSumToN end" << endl;
 }
 
 #endif

@@ -6,8 +6,8 @@ using namespace std;
 
 int main()
 {
-	//test_Code01_KillMonster();
-	//test_Code02_MinCoinsNoLimit();
+	test_Code01_KillMonster();
+	test_Code02_MinCoinsNoLimit();
 	test_Code03_SplitNumber();
 	char c;
 	cin >> c;

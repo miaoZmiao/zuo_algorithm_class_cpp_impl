@@ -115,6 +115,7 @@ namespace Code02_SplitSumClosedSizeHalf {
 
 void test_Code02_SplitSumClosedSizeHalf() {
 
+	cout << "test_Code02_SplitSumClosedSizeHalf begin" << endl;
 	Code02_SplitSumClosedSizeHalf::Solution sln;
 	stop_watch st;
 	double elapse_force = 0.0;
@@ -145,6 +146,7 @@ void test_Code02_SplitSumClosedSizeHalf() {
 	cout << "average elapse(ms)" << endl;
 	cout << "force:" << elapse_force / testTime << "ms" << endl;
 	cout << "dp:" << elapse_dp / testTime << "ms" << endl;
+	cout << "test_Code02_SplitSumClosedSizeHalf end" << endl;
 	//	test begin
 	//	test end
 	//	average elapse(ms)

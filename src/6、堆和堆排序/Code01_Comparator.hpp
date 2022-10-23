@@ -72,6 +72,7 @@ namespace Code01_Comparator {
 }
 
 void test_Code01_Comparator() {
+	cout << "test_Code01_Comparator begin" << endl;
 	Code01_Comparator::test_();
-
+	cout << "test_Code01_Comparator end" << endl;
 }

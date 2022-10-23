@@ -128,7 +128,7 @@ namespace Code02_ConvertToLetterString  {
 
 void test_Code02_ConvertToLetterString()
 {
-	cout << "test Code02_ConvertToLetterString" << endl;
+	cout << "test Code02_ConvertToLetterString begin" << endl;
 	int N = 5;
 	char minchar = '0';
 	char maxchar = '9';
@@ -152,7 +152,7 @@ void test_Code02_ConvertToLetterString()
 		}
 
 	}
-	
+	cout << "test Code02_ConvertToLetterString end" << endl;
 	
 }
 

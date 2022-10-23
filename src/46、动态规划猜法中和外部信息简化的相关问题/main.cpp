@@ -7,8 +7,8 @@ using namespace std;
 
 int main() {
 	
-	//test_Code03_DeleteAdjacentSameCharacter();
-	//test_Code04_MaxSumLengthNoMore();
+	test_Code03_DeleteAdjacentSameCharacter();
+	test_Code04_MaxSumLengthNoMore();
 	test_Code05_HuffmanTree();
 	char c;
 	cin >> c;

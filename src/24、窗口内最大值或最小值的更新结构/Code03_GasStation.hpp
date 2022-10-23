@@ -89,7 +89,7 @@ namespace Code03_GasStation {
 
 void test_Code03_GasStation(){
 	Code03_GasStation::Solution sln;
-
+	cout << "test_Code03_GasStation begin" << endl;
 	vector<int> gas{ 1,2,3,4,5 };
 	vector<int> cost{ 3,4,5,1,2 };
 	stop_watch st;
@@ -98,7 +98,7 @@ void test_Code03_GasStation(){
 	st.stop();
 	cout << "ans:" << ans << endl;
 	cout << "elapse:" << st.elapsed_ms() << endl;
-
+	cout << "test_Code03_GasStation end" << endl;
 }
 
 

@@ -75,12 +75,12 @@ namespace Code01_PalindromeSubsequence {
 // https://leetcode.com/problems/longest-palindromic-subsequence/
 
 void test_Code01_PalindromeSubsequence(){
-
+	cout << "test_Code01_PalindromeSubsequence begin" << endl;
 	string input = "abcdef";
 	Code01_PalindromeSubsequence::Solution sln;
 	int ret = sln.longestPalindromeSubseq(input);
 
 	cout << "longestPalindromeSubseq:"<< ret << endl;
-
+	cout << "test_Code01_PalindromeSubsequence end" << endl;
 }
 #endif

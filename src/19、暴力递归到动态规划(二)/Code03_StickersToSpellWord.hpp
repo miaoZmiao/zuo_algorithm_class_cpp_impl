@@ -200,10 +200,11 @@ void test_Code03_StickersToSpellWord()
 		"sky", "cent", "bright", "kill", "forest", "neighbor", "capital", "tall" };
 	string target = "originalchair";
 	// minStickers1 leetcode  ≤‚ ‘≥¨ ±
+	cout << "test_Code03_StickersToSpellWord begin" << endl;
 	int ret1 = Code03_StickersToSpellWord::minStickers1(stickers, target);
 	// minStickers2  leetcode ≤‚ ‘Õ®π˝
 	int ret2 = Code03_StickersToSpellWord::minStickers2(stickers, target);
-
+	cout << "test_Code03_StickersToSpellWord end" << endl;
 }
 
 

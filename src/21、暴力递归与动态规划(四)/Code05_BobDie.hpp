@@ -97,6 +97,8 @@ namespace Code05_BobDie {
 
 void test_Code05_BobDie() {
 	
+	cout << "test_Code05_BobDie begin" << endl;
+
 	Code05_BobDie::Solution sln;
 	cout << "测试开始" << endl;
 	double elapse_force = 0.0;
@@ -115,6 +117,7 @@ void test_Code05_BobDie() {
 	cout << "average elapse(ms)" << endl;
 	cout << "force:"<< elapse_force << "ms" << endl;
 	cout << "dp:" << elapse_dp << "ms" << endl;
+	cout << "test_Code05_BobDie end" << endl;
 //	某次测试显示
 //	p1:0.997021 p2 : 0.997021
 //	average elapse(ms)

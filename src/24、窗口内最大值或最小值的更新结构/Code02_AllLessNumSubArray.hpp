@@ -96,7 +96,7 @@ void test_Code02_AllLessNumSubArray()
 	double elapse_slidewindow = 0.0;
 	Code02_AllLessNumSubArray::Solution sln;
 	int sum = maxval/2 * maxlen;
-	cout << "test begin" << endl;
+	cout << "test_Code02_AllLessNumSubArray begin" << endl;
 	for (int i = 0; i < testLoop; i++)
 	{
 		vector<int> arr = generateRandomArray(maxlen, maxval, 1);
@@ -116,10 +116,11 @@ void test_Code02_AllLessNumSubArray()
 			break;
 		}
 	}
-	cout << "test end" << endl;
+
 	cout << "average elapse(ms)" << endl;
 	cout << "force:" << elapse_force / testLoop << endl;
 	cout << "slidewindow:" << elapse_slidewindow / testLoop << endl;
+	cout << "test_Code02_AllLessNumSubArray end" << endl;
 	//	test begin
 	//	test end
 	//	average elapse(ms)

@@ -79,6 +79,7 @@ namespace Code01_SplitSumClosed {
 
 void test_Code01_SplitSumClosed() {
 
+	cout << "test_Code01_SplitSumClosed begin" << endl;
 	Code01_SplitSumClosed::Solution sln;
 	stop_watch st;
 	double elapse_force = 0.0;
@@ -109,6 +110,7 @@ void test_Code01_SplitSumClosed() {
 	cout << "average elapse(ms)" << endl;
 	cout << "force:" << elapse_force / testTime << "ms" << endl;
 	cout << "dp:" << elapse_dp / testTime << "ms" << endl;
+	cout << "test_Code01_SplitSumClosed end" << endl;
 	//	test begin
 	//	test end
 	//	average elapse(ms)

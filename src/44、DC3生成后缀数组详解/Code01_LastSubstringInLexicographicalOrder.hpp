@@ -243,11 +243,13 @@ namespace Code01_LastSubstringInLexicographicalOrder {
 
 void test_Code01_LastSubstringInLexicographicalOrder() {
 
+	cout << "test_Code01_LastSubstringInLexicographicalOrder begin" << endl;
 	Code01_LastSubstringInLexicographicalOrder::Solution sln;
 	string input = "jlidhumidloagrlvvxdqscegbeaybfhhyaeilzxdpyvvxixrjytdalknkospradmumysbkizziltzjwsxkteykblcvkfivzmtvnsyrfgvojhyzkouscymixrdfmehiwijntzqptqaxgalygtzvwxnsgcnygbjzeqmbactgmckvssvkentpxcnznrbbnkttnzpvlzfmdvvsozaiycumzlizbfxvyucyagclrifczcvzvrkiqiajindjjyxgxflnjcgckruujsbppxtwgwvrrxgniqplynvboqyvrsxnmbjhgoybqophbxmjhhrznezstujjuucvrrvofktxldxfaioyijoayggmvjmgzjflzxmkwxmxnyizampdcfntdfkxxprgfxjduiwrmgdfuprpljgnbzbedqbzhqsbmohbhlszvdzcgbimfurmkwqaignxbeevevonmdgupugcjxvqglqkwqzrlqequliwmfrvidtpprodcbhgkt";
 	//string input = "mississippi";// Mississippi
 	string ans = sln.lastSubstring(input);
 	cout << ans << endl;
+	cout << "test_Code01_LastSubstringInLexicographicalOrder end" << endl;
 }
 
 #endif

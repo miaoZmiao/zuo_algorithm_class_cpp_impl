@@ -7,8 +7,8 @@ using namespace std;
 
 int main()
 {
-	//test_Code01_KMP();
-	//test_Code02_TreeEqual();
+	test_Code01_KMP();
+	test_Code02_TreeEqual();
 	test_Code03_IsRotation();
 	char c;
 	cin >> c;

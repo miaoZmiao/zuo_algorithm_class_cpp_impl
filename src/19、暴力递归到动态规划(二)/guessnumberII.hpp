@@ -99,6 +99,7 @@ namespace GUESS_NUMBER_II
 
 void test_guess_number_ii()
 {
+	cout << "test_guess_number_ii begin" << endl;
 	int N = 10;
 	GUESS_NUMBER_II::Solution sln;
 	int input = 1;
@@ -117,7 +118,7 @@ void test_guess_number_ii()
 		}
 		input++;
 	}
-	
+	cout << "test_guess_number_ii end" << endl;
 }
 
 

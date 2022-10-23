@@ -6,6 +6,9 @@
 using namespace std;
 
 int main() {
+	test_Code01_IndexTree();
+	test_Code02_IndexTree2D();
+	test_Code03_AC1();
 	test_Code04_AC2();
 	char c;
 	cin >> c;

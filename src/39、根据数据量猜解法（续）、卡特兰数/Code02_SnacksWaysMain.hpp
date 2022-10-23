@@ -86,6 +86,7 @@ void test_Code02_SnacksWaysMain() {
 	//输入包括两行
 	//第一行为两个正整数n和w(1 <= n <= 30, 1 <= w <= 2 * 10 ^ 9), 表示零食的数量和背包的容量。
 	//第二行n个正整数v[i](0 <= v[i] <= 10 ^ 9), 表示每袋零食的体积。
+	cout << "test_Code02_SnacksWaysMain begin" << endl;
 	int n = 30;
 	int w = 1;
 	cin >> n;
@@ -100,7 +101,7 @@ void test_Code02_SnacksWaysMain() {
 
 	cout << ways << endl;
 
-
+	cout << "test_Code02_SnacksWaysMain end" << endl;
 	// 牛客测试已经通过
 }
 

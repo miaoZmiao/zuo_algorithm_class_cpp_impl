@@ -126,6 +126,7 @@ namespace Code01_KillMonster {
 
 void test_Code01_KillMonster()
 {
+	cout << "test_Code01_KillMonster begin" << endl;
 	int NMax = 10;
 	int MMax = 10;
 	int KMax = 10;
@@ -176,7 +177,7 @@ void test_Code01_KillMonster()
 	cout << "force:" << elapse_force/ testTime << "ms" << endl;
 	cout << "dp:" << elapse_dp/ testTime << "ms" << endl;
 	cout << "dpEnumOptimization:" << elapse_dp_EO / testTime << "ms" << endl;
-
+	cout << "test_Code01_KillMonster end" << endl;
 	//	average elapse(ms)
 	//	force:0.176545ms
 	//	dp : 0.003655ms

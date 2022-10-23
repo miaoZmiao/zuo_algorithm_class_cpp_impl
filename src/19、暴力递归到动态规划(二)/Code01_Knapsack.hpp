@@ -82,12 +82,12 @@ void test_Code01_Knapsack()
 	vector<int> weight{ 3, 2, 4, 7, 3, 1, 7 };
 	vector<int> value{ 5, 6, 3, 19, 12, 4, 2 };
 	int bag = 15;
-	cout << "test_Code01_Knapsack" << endl;
+	cout << "test_Code01_Knapsack begin" << endl;
 	cout << "maxValue:" << Code01_Knapsack::maxValue(weight,
 		value, bag) << endl;
 	cout << "dpway:" << Code01_Knapsack::dpway(weight, value, bag) 
 		<< endl;
-
+	cout << "test_Code01_Knapsack end" << endl;
 }
 
 

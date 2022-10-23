@@ -297,12 +297,12 @@ namespace Code01_CountofRangeSum {
 
 void test_Code01_CountofRangeSum() {
 
-
+	cout << "test_Code01_CountofRangeSum begin" << endl;
 	vector<int> arr{-2,5,-1};
 	int lo = -2;
 	int up = 2;
 	int ans = Code01_CountofRangeSum::countRangeSum2(arr, lo, up);
-	
+	cout << "test_Code01_CountofRangeSum end" << endl;
 
 }
 

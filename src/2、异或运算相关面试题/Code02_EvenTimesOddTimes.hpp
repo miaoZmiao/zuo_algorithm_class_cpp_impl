@@ -2,7 +2,7 @@
 
 
 #include "utility_func.hpp"
-
+#include <stack>
 namespace Code02_EvenTimesOddTimes {
 
 	int find_odd_number(vector<int> & arr)
@@ -13,6 +13,7 @@ namespace Code02_EvenTimesOddTimes {
 		{
 			eor = eor ^ ele;
 		}
+		cout << eor << endl;
 		return eor;
 	}
 
@@ -91,5 +92,26 @@ namespace Code02_EvenTimesOddTimes {
 
 		return 0;
 	}
+
+}
+
+void test_Code02_EvenTimesOddTimes() {
+	cout << "Code02_EvenTimesOddTimes begin" << endl;
+	int a = 5;
+	int b = 7;
+
+	a = a ^ b;
+	b = a ^ b;
+	a = a ^ b;
+
+	cout << (a) << endl;
+	cout<<(b) << endl;
+
+	vector<int> arr1 = { 3, 3, 2, 3, 1, 1, 1, 3, 1, 1, 1 };
+	Code02_EvenTimesOddTimes::find_odd_number(arr1);
+
+	vector<int> arr2 = { 4, 3, 4, 2, 2, 2, 4, 1, 1, 1, 3, 3, 1, 1, 1, 4, 2, 2 };
+	Code02_EvenTimesOddTimes::find_odd_a_b_number(arr2);
+	cout << "Code02_EvenTimesOddTimes end" << endl;
 
 }

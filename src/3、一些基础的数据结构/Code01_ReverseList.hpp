@@ -2,12 +2,11 @@
 
 
 #include "utility_func.hpp"
-
-
+#include "scope_guard.h"
+#include <stack>
+ 
 namespace Code01_ReverseList {
 	struct LinkNode {
-
-
 		LinkNode() {}
 		LinkNode(int v) :val(v) {
 
@@ -22,6 +21,9 @@ namespace Code01_ReverseList {
 		int val;
 		doubleLinkNode * next = nullptr;
 		doubleLinkNode * pre = nullptr;
+		doubleLinkNode(int value = 0) {
+			val = value;
+		}
 	};
 
 
@@ -50,6 +52,26 @@ namespace Code01_ReverseList {
 		return pre;
 	}
 
+
+	doubleLinkNode * reverseDoubleLinkList(doubleLinkNode * head) {
+	    
+		doubleLinkNode * rhead = head;
+
+		doubleLinkNode * cur = head;
+		doubleLinkNode * last = nullptr;
+		while (cur != nullptr)
+		{
+			doubleLinkNode * next = cur->next;
+			cur->next = last;
+			cur->pre = next;
+			last = cur;
+			cur = next;
+		}
+		return last;
+	}
+
+
+
 	int random_number(int maxnum, int min_num)
 	{
 		if (maxnum < min_num)
@@ -67,28 +89,56 @@ namespace Code01_ReverseList {
 
 	LinkNode * generate_link_list(int max_num, int min_num, size_t  len = 10) {
 
+		std::random_device rd;
+		std::mt19937 rgen(rd());
+		std::uniform_int_distribution<> disgene(min_num, max_num);
+		auto rg = [&]() {
+			return disgene(rgen);
+		};
 		size_t size = len;
-		LinkNode * head = new LinkNode(random_number(max_num, min_num));
+		LinkNode * head = new LinkNode(rg());
 		size--;
 		LinkNode * cur = head;
 		while (size > 0)
 		{
-			cur->next = new LinkNode(random_number(max_num, min_num));
+			cur->next = new LinkNode(rg());
 			size--;
 			cur = cur->next;
 		}
 		return head;
 	}
 
-	void destroy_link_list(LinkNode * head) {
+	doubleLinkNode * generate_doublelink_list(int max_num, int min_num, size_t  len = 10) {
+	
+		std::random_device rd;
+		std::mt19937 rgen(rd());
+		std::uniform_int_distribution<> disgene(min_num, max_num);
+		auto rg = [&]() {
+			return disgene(rgen);
+		};
+		size_t size = len;
+		doubleLinkNode * head = new doubleLinkNode(rg());
+		size--;
+		doubleLinkNode * cur = head;
+		while (size > 0)
+		{
+			cur->next = new doubleLinkNode(rg());
+			cur->next->pre = cur;
+			size--;
+			cur = cur->next;
+		}
+		return head;
+	}
+	template <class T>
+	void destroy_link_list(T * head) {
 		if (head == nullptr)
 		{
 			return;
 		}
-		LinkNode * cur = head;
+		T * cur = head;
 		while (cur != nullptr)
 		{
-			LinkNode * nextnode = cur->next;
+			T * nextnode = cur->next;
 			delete cur;
 			cur = nextnode;
 		}
@@ -133,14 +183,14 @@ namespace Code01_ReverseList {
 		return head;
 	}
 
-
-	bool is_two_list_equal(LinkNode * list1, LinkNode * list2) {
+	template < class TList>
+	bool is_two_list_equal(TList * list1, TList * list2) {
 		if (list1 == list2)
 		{
 			return true;
 		}
-		LinkNode * cur1 = list1;
-		LinkNode * cur2 = list2;
+		TList * cur1 = list1;
+		TList * cur2 = list2;
 
 		while ((cur1 != nullptr  && cur2 != nullptr))
 		{
@@ -196,4 +246,128 @@ namespace Code01_ReverseList {
 		return reverseHead;
 	}
 
+
+	// for test
+	vector<int> getLinkedListOriginOrder(LinkNode* head) {
+		vector<int > ans;
+		while (head != nullptr) {
+			ans.push_back(head->val);
+			head = head->next;
+		}
+		return ans;
+	}
+
+	// for test
+	vector<int> getDoubleListOriginOrder(doubleLinkNode * head) {
+		vector<int> ans;
+		while (head != nullptr) {
+			ans.push_back(head->val);
+			head = head->next;
+		}
+		return ans;
+	}
+
+	bool checkLinkedListReverse(vector<int> & origin, LinkNode * head) {
+		for (int i = origin.size() - 1; i >= 0; i--) {
+			if (!origin[i]== (head->val)) {
+				return false;
+			}
+			head = head->next;
+		}
+		return true;
+	}
+
+	bool checkDoubleListReverse(vector<int> & origin, doubleLinkNode * head) {
+		doubleLinkNode * end = nullptr;
+		for (int i = origin.size() - 1; i >= 0; i--) {
+			if (!origin[i] == (head->val)) {
+				return false;
+			}
+			end = head;
+			head = head->next;
+		}
+		for (int i = 0; i < origin.size(); i++) {
+			if (!origin[i]==(end->val)) {
+				return false;
+			}
+			end = end->pre;
+		}
+		return true;
+	}
+
+
+	void test_main() {
+	
+		int len = 50;
+		int value = 100;
+		int testTime = 1000;
+
+		for (int i = 0; i < testTime; i++) {
+			LinkNode * node1 = generate_link_list(value, 0, len);
+			scope_guard sg1([node1]() {
+				if (node1 != nullptr)
+				{
+					destroy_link_list(node1);
+				}
+			});
+			vector<int> list1 = getLinkedListOriginOrder(node1);
+			node1 = reverseLinkList(node1);
+			if (!checkLinkedListReverse(list1, node1)) {
+				cout << "Oops1!" << endl;
+				break;
+			}
+
+			LinkNode * node2 = generate_link_list(value, 0, len);
+			scope_guard sg2([node2]() {
+				if (node2 != nullptr)
+				{
+					destroy_link_list(node2);
+				}
+			});
+			vector<int> list2 = getLinkedListOriginOrder(node2);
+			node2 = reverseLinkList(node2);
+			if (!checkLinkedListReverse(list2, node2)) {
+				cout << "Oops2!" << endl;
+				break;
+			}
+
+			doubleLinkNode * node3 = generate_doublelink_list(value, 0, len);
+			scope_guard sg3([node3]() {
+				if (node3 != nullptr)
+				{
+					destroy_link_list(node3);
+				}
+			});
+			vector<int> list3 = getDoubleListOriginOrder(node3);
+			node3 = reverseDoubleLinkList(node3);
+			if (!checkDoubleListReverse(list3, node3)) {
+				cout << "Oops3!" << endl;
+				break;
+			}
+
+			doubleLinkNode * node4 = generate_doublelink_list(value, 0, len);
+			scope_guard sg4([node4]() {
+				if (node4 != nullptr)
+				{
+					destroy_link_list(node4);
+				}
+			});
+			vector<int> list4 = getDoubleListOriginOrder(node4);
+			node4 = reverseDoubleLinkList(node4);
+			if (!checkDoubleListReverse(list4, node4)) {
+				cout << "Oops3!" << endl;
+				break;
+			}
+
+		}
+	
+	
+	}
+}
+
+
+void test_Code01_ReverseList() {
+	cout << "test_Code01_ReverseList begin" << endl;
+	Code01_ReverseList::test_main();
+	cout << "test_Code01_ReverseList end" << endl;
 }
