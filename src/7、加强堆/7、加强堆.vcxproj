@@ -147,6 +147,7 @@
   <ItemGroup>
     <ClInclude Include="Code01_CoverMax.hpp" />
     <ClInclude Include="Code02_EveryStepShowBoss.hpp" />
+    <ClInclude Include="DatabaseCashe.h" />
     <ClInclude Include="HeapGreater.hpp" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />

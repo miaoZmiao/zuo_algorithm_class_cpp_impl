@@ -29,5 +29,8 @@
     <ClInclude Include="Code02_EveryStepShowBoss.hpp">
       <Filter>头文件</Filter>
     </ClInclude>
+    <ClInclude Include="DatabaseCashe.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
   </ItemGroup>
 </Project>
